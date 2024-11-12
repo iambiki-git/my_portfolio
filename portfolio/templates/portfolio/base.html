@@ -8,8 +8,22 @@
 
 
     <title>{% block title %}Biki | Portfolio{% endblock %}</title>
+    <style>
+
+        body {
+            background-color: #ffffff; /* Light mode */
+            color: #000000;
+          }
+          
+          body.dark {
+            background-color: #18181B; /* Dark mode */
+            color: #fff;
+            {% comment %} color: #94A3B8; {% endcomment %}
+          }
+          
+    </style>
 </head>
-<body class="bg-zinc-900">
+<body>
     {% block navbar %} {% include "portfolio/navbar.html" %}{% endblock %}
     {% block herosection %} {% include "portfolio/heroSection.html" %}{% endblock %}
     {% block footer %} {% include "portfolio/footer.html" %}{% endblock %}
