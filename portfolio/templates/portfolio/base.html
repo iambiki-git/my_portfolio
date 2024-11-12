@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,27 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
-
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    
     <title>{% block title %}Biki | Portfolio{% endblock %}</title>
-    <style>
-
-        body {
-            background-color: #ffffff; /* Light mode */
-            color: #000000;
-          }
-          
-          body.dark {
-            background-color: #18181B; /* Dark mode */
-            color: #fff;
-            {% comment %} color: #94A3B8; {% endcomment %}
-          }
-          
-    </style>
+    <link rel="stylesheet" href="{% static './portfolio/css/style.css' %}">
 </head>
 <body>
+  <div id="trail" class="pointer-trail hidden"></div>
+
     {% block navbar %} {% include "portfolio/navbar.html" %}{% endblock %}
-    {% block herosection %} {% include "portfolio/heroSection.html" %}{% endblock %}
+
+    {% block herosection %}{% endblock %}
+    {% block aboutme %}{% endblock %}
+
+
     {% block footer %} {% include "portfolio/footer.html" %}{% endblock %}
+
+    
+
+    <script src="{% static './portfolio/js/script.js' %}"></script>
 </body>
 </html>

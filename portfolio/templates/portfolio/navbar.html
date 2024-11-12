@@ -1,12 +1,12 @@
 {% load static %}
 <nav class="flex items-center justify-between h-20 font-semibold px-6 md:px-32 shadow-xl">
     <!-- Logo -->
-    <a href="/" class="text-xl md:text-xl transition-all duration-300 ease-in-out"><h2>BIKI</h2></a>
+    <a href="/" class="text-xl md:text-xl transition-all duration-300 ease-in-out"><h2 class="font-bold">BIKI</h2></a>
 
     <!-- Menu Items (Desktop) -->
     <ul class="hidden items-center gap-8 md:flex font-sans">
         {% comment %} <a href="#" class="hover:text-slate-300 transition-all duration-300 ease-in-out"><li>home</li></a> {% endcomment %}
-        <a href="#" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>about</li></a>
+        <a href="{% url 'about' %}" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>about</li></a>
         <a href="#" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>projects</li></a>
         <a href="#" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>services</li></a>
         <a href="#" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>blog</li></a>
@@ -18,9 +18,9 @@
     <!-- Hamburger Icon (Mobile) -->
     <div class="md:hidden">
         <button id="menu-toggle" class="text-2xl">
-            <i class='bx bx-menu hover:text-slate-300 transition-all duration-300 ease-in-out'></i>
+            <i class='bx bx-menu font-bold hover:text-slate-300 transition-all duration-300 ease-in-out'></i>
         </button>
-        <i class='bx bx-sun cursor-pointer text-2xl ml-4' id="mobile-theme-toggle"></i>
+        <i class='bx bx-sun font-bold cursor-pointer text-2xl ml-4' id="mobile-theme-toggle"></i>
 
     </div>
 </nav>
@@ -35,7 +35,7 @@
     <!-- Menu Links -->
     <ul class="flex flex-col items-start space-y-4">
         <li><a href="/" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Home</a></li>
-        <li><a href="#" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">About</a></li>
+        <li><a href="{% url 'about' %}" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">About</a></li>
         <li><a href="#" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Projects</a></li>
         <li><a href="#" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Services</a></li>
         <li><a href="#" class="font-semibold text-lg hover:border-b-2 border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Blog</a></li>

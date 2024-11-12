@@ -1,0 +1,92 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block herosection %}{% endblock %}
+{% block aboutme %}
+
+<div class="min-h-screen py-20 md:py-32 px-6 font-mono">
+    {% comment %} about me {% endcomment %}
+    <div class="max-w-6xl mx-auto mb-16 border-b border-slate-600 pb-24">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- About Me Text on Left -->
+            <div class="flex flex-col justify-center">
+                <h2 class="text-5xl font-extrabold mb-4">about.</h2>
+                <p class="text-medium mb-4">
+                    Hi, I'm Bikram! I'm a web developer passionate about building modern, dynamic web applications.
+                </p>
+                <p class="text-medium mb-4">
+                    When I'm not coding, you can find me exploring new technologies, reading tech blogs, or watching online tutorials to further improve my skills. I'm always eager to learn and adapt to the latest trends in the tech world.
+                </p>
+            </div>
+
+             <!-- Image on Right -->
+            
+            <div class="flex justify-center items-center">
+                <img src="{% static './portfolio/images/mypic.jpg' %}" alt="Your Image" class="w-96 h-96 object-cover rounded shadow-lg transform transition duration-500 hover:scale-110" />
+            </div>
+            
+            
+        </div>
+    </div>
+    {% comment %} endof aboutme {% endcomment %}
+
+    {% comment %} start of funny facts {% endcomment %}
+    <div class="min-h-screen py-20 px-6">
+        <div class="max-w-6xl mx-auto border-b border-slate-600 pb-24">
+            <!-- About Me Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- Left Column: Image -->
+                <div class="flex justify-center items-center">
+                    <img src="{% static './portfolio/images/fun_facts.jpg' %}" alt="Your Image" class="w-96 h-96 object-cover rounded shadow-lg transform transition duration-500 hover:scale-110" />
+                </div>
+    
+                 <!-- Right Column: Funny Facts -->
+            <div class="flex flex-col justify-center space-y-4">
+                <h2 class="text-3xl font-semibold">Funn facts.</h2>
+
+                <div>
+                    <p class="text-medium"><strong>1. I once tried to make a website for my pet hamster.</strong></p>
+                    <p>Turns out, hamsters aren’t very tech-savvy!</p>
+                </div>
+
+                <div>
+                    <p class="text-medium"><strong>2. My code often gets more bugs than I do in real life.</strong></p>
+                    <p>Apparently, debugging is harder than life itself!</p>
+                </div>
+
+                <div>
+                    <p class="text-medium"><strong>3. I’ve Googled "How to turn off Wi-Fi" more times than I’d like to admit.</strong></p>
+                    <p>Let’s just say I’m not the best at technology… but I try!</p>
+                </div>
+
+                <div>
+                    <p class="text-medium"><strong>4. I once spilled coffee on my laptop... and it still works better than my code.</strong></p>
+                    <p>I guess caffeine works wonders, even for computers!</p>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    {% comment %} endof funny facts {% endcomment %}
+
+    {% comment %} start of my skills  {% endcomment %}
+    
+
+</div>
+
+<!-- Scroll Animations -->
+<script>
+    window.addEventListener('scroll', () => {
+        const elements = document.querySelectorAll('.fade-in');
+        elements.forEach((el) => {
+            if (el.getBoundingClientRect().top < window.innerHeight) {
+                el.classList.add('animate__fadeIn');
+            }
+        });
+    });
+</script>
+
+
+
+{% endblock %}
+{% block footer %}{% endblock %}
