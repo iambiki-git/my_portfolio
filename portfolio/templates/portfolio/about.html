@@ -41,25 +41,25 @@
     
                  <!-- Right Column: Funny Facts -->
             <div class="flex flex-col justify-center space-y-4">
-                <h2 class="text-3xl font-semibold">Funn facts.</h2>
+                <h2 class="text-4xl font-extrabold">Funn facts.</h2>
 
                 <div>
-                    <p class="text-medium"><strong>1. I once tried to make a website for my pet hamster.</strong></p>
+                    <p class="text-sm"><strong>1. I once tried to make a website for my pet hamster.</strong></p>
                     <p>Turns out, hamsters aren’t very tech-savvy!</p>
                 </div>
 
                 <div>
-                    <p class="text-medium"><strong>2. My code often gets more bugs than I do in real life.</strong></p>
+                    <p class="text-sm"><strong>2. My code often gets more bugs than I do in real life.</strong></p>
                     <p>Apparently, debugging is harder than life itself!</p>
                 </div>
 
                 <div>
-                    <p class="text-medium"><strong>3. I’ve Googled "How to turn off Wi-Fi" more times than I’d like to admit.</strong></p>
+                    <p class="text-sm"><strong>3. I’ve Googled "How to turn off Wi-Fi" more times than I’d like to admit.</strong></p>
                     <p>Let’s just say I’m not the best at technology… but I try!</p>
                 </div>
 
                 <div>
-                    <p class="text-medium"><strong>4. I once spilled coffee on my laptop... and it still works better than my code.</strong></p>
+                    <p class="text-sm"><strong>4. I once spilled coffee on my laptop... and it still works better than my code.</strong></p>
                     <p>I guess caffeine works wonders, even for computers!</p>
                 </div>
             </div>
@@ -70,41 +70,61 @@
     {% comment %} endof funny facts {% endcomment %}
 
     {% comment %} schooling +2 bachelor {% endcomment %}
-    <div class="min-h-screen py-4 px-6 font-sans">
+    <div class="min-h-screen py-6 px-6">
         <div class="max-w-6xl mx-auto border-b border-slate-600 pb-24">
-            <h2 class="text-4xl font-semibold text-center mb-12">My Education</h2>
+            <h2 class="text-4xl font-extrabold text-center mb-6">My Education</h2>
     
-            <!-- Education Cards -->
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                
-                <!-- Schooling Card -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform duration-500 hover:scale-105">
-                    <h3 class="text-2xl font-bold text-indigo-600 mb-2">Schooling</h3>
-                    <p class="text-lg font-medium text-gray-700 mb-1">Mount Everest Public School</p>
-                    <p class="text-sm text-gray-500 mb-4">2072 - 2074 B.S</p>
-                    <p class="text-gray-600">
-                        Completed basic schooling with a focus on foundational subjects, excelling in mathematics and science. Actively participated in school events and leadership activities.
-                    </p>
+            <!-- Timeline -->
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-1/2 w-px h-full -z-1"></div>
+    
+                <!-- Schooling -->
+                <div class="mb-8 md:mb-10">
+                    <div class="flex items-center space-x-4 md:space-x-6">
+                        <!-- Arrow -->
+                        <div class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-indigo-600"></div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Schooling</h3>
+                            <p class="text-lg text-gray-700">Mount Everest Public School</p>
+                            <p class="text-sm text-gray-500">2072 - 2074 B.S</p>
+                            <p class="text-gray-600 mt-2">
+                                Completed basic schooling with a focus on foundational subjects like mathematics and science.
+                            </p>
+                        </div>
+                    </div>
                 </div>
     
-                <!-- High School (+2) Card -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform duration-500 hover:scale-105">
-                    <h3 class="text-2xl font-bold text-indigo-600 mb-2">High School (+2)</h3>
-                    <p class="text-lg font-medium text-gray-700 mb-1">Red Star Higher Secondary School</p>
-                    <p class="text-sm text-gray-500 mb-4">2074 - 2076 B.S</p>
-                    <p class="text-gray-600">
-                        Specialized in Computer Science (CS), achieving high scores in core subjects. Engaged in computer science projects and represented the school in various academic competitions.
-                    </p>
+                <!-- High School (+2) -->
+                <div class="mb-8 md:mb-10">
+                    <div class="flex items-center space-x-4 md:space-x-6">
+                        <!-- Arrow -->
+                        <div class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-indigo-600"></div>
+                        <div>
+                            <h3 class="text-xl font-semibold">High School (+2)</h3>
+                            <p class="text-lg text-gray-700">Red Star Higher Secondary School</p>
+                            <p class="text-sm text-gray-500">2074 - 2076 B.S</p>
+                            <p class="text-gray-600 mt-2">
+                                Specialized in Computer Science, achieving high scores in core subjects and participated in academic projects.
+                            </p>
+                        </div>
+                    </div>
                 </div>
     
-                <!-- Bachelor's Degree Card -->
-                <div class="bg-white p-6 rounded-lg shadow-lg transition-transform duration-500 hover:scale-105">
-                    <h3 class="text-2xl font-bold text-indigo-600 mb-2">Bachelor's Degree</h3>
-                    <p class="text-lg font-medium text-gray-700 mb-1">Tribhuvan University</p>
-                    <p class="text-sm text-gray-500 mb-4">2020 - running</p>
-                    <p class="text-gray-600">
-                        Bachelor of Computer Application, focusing on software development, data structures, and web technologies. Completed various projects and internships in the field.
-                    </p>
+                <!-- Bachelor's Degree -->
+                <div>
+                    <div class="flex items-center space-x-4 md:space-x-6">
+                        <!-- Arrow -->
+                        <div class="w-0 h-0 border-l-8 border-r-8 border-t-8 border-transparent border-t-indigo-600"></div>
+                        <div>
+                            <h3 class="text-xl font-semibold">Bachelor's Degree</h3>
+                            <p class="text-lg text-gray-700">Tribhuvan University</p>
+                            <p class="text-sm text-gray-500">2020 - running</p>
+                            <p class="text-gray-600 mt-2">
+                                Pursuing Bachelor of Computer Application, focusing on software development, data structures, and web technologies.
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -112,13 +132,90 @@
     {% comment %} end of schooling +2 bachelor {% endcomment %}
 
     {% comment %} start of my skills  {% endcomment %}
+    <div class="min-h-screen py-16 px-6 font-sans -mt-8">
+        <div class="max-w-6xl mx-auto border-b border-slate-600 pb-24">
+            <!-- Skills Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     
+                <!-- Left Column: Title -->
+                <div class="flex flex-col justify-center">
+                    <h2 class="text-4xl font-extrabold mb-6">Skills I Am Proficient In</h2>
+                    <p class="text-lg text-gray-600">
+                        Here are some of the key skills I bring to the table:
+                    </p>
+                </div>
+    
+                <!-- Right Column: Skills Bars -->
+                <div class="flex flex-col space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-semibold">HTML & CSS</span>
+                            <span class="text-sm text-gray-500">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-semibold">JavaScript (ES6+)</span>
+                            <span class="text-sm text-gray-500">85%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-semibold">React JS</span>
+                            <span class="text-sm text-gray-500">80%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-semibold">Django</span>
+                            <span class="text-sm text-gray-500">70%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-semibold">Python</span>
+                            <span class="text-sm text-gray-500">90%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+    
+                    <div class="space-y-4">
+                        <div class="flex items-center justify-between">
+                            <span class="text-lg font-semibold">SQL</span>
+                            <span class="text-sm text-gray-500">75%</span>
+                        </div>
+                        <div class="w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 75%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     {% comment %} end of myskill {% endcomment %}
     
     
 
 </div>
-
+ 
 <!-- Scroll Animations -->
 <script>
     window.addEventListener('scroll', () => {
@@ -129,6 +226,8 @@
             }
         });
     });
+
+
 </script>
 
 

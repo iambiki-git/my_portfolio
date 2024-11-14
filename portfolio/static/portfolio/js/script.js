@@ -14,3 +14,5 @@ document.addEventListener("DOMContentLoaded", () => {
         trail.classList.add("hidden");
     });
 });
+
+
