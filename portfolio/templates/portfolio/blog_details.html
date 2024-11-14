@@ -1,0 +1,149 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block heroSection %}{% endblock %}
+{% block blogDetails %}
+{% comment %} <div class="container mx-auto px-4 py-8">
+    <!-- Page Heading -->
+    <h2 class="text-3xl font-extrabold text-center mb-8">Project Title: My Django Blog</h2>
+
+    <!-- Blog Details Section -->
+    <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Blog Image -->
+        <div class="lg:w-1/2">
+            <img src="{% static 'portfolio/images/blog-home.png' %}" alt="Blog Image" class="w-full h-64 object-contain rounded-lg shadow-lg mb-6 lg:mb-0">
+        </div>
+
+        <!-- Blog Information -->
+        <div class="lg:w-1/2">
+            <h3 class="text-2xl font-bold mb-4">Blog Overview</h3>
+            <p class="mb-6">
+                This blog post delves into the world of Django development. It highlights key features of Django, the benefits of using this framework, and a step-by-step guide for beginners to get started.
+            </p>
+
+            <h4 class="text-xl font-semibold mb-2">Topics Covered</h4>
+            <ul class="list-disc pl-5 mb-6">
+                <li>Introduction to Django</li>
+                <li>Setting Up a Django Project</li>
+                <li>Building a Simple Application</li>
+                <li>Deploying Your Django App</li>
+            </ul>
+
+            <h4 class="text-xl font-semibold mb-2">Technologies Used</h4>
+            <ul class="list-disc pl-5 mb-6">
+                <li>Django (Backend Framework)</li>
+                <li>SQLite (Database)</li>
+                <li>HTML/CSS (Frontend)</li>
+            </ul>
+
+            <a href="#" class="text-blue-500 dark:text-blue-400 font-bold hover:underline transition duration-300">Read Full Post</a>
+        </div>
+    </div>
+
+    <!-- Blog Image Gallery Section -->
+    <div class="mt-12">
+        <h3 class="text-2xl font-bold mb-4">Blog Post Photos</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-login.png' %}" alt="Blog Photo 1" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-register.png' %}" alt="Blog Photo 2" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-profile.png' %}" alt="Blog Photo 3" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-search.png' %}" alt="Blog Photo 4" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-footer.png' %}" alt="Blog Photo 5" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-home.png' %}" alt="Blog Photo 6" class="w-full h-64 object-contain">
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="mt-8">
+        <h3 class="text-2xl font-semibold mb-4">Challenges & Learnings from This Blog</h3>
+        <p class="mb-8">
+            Writing this blog post posed several challenges, especially when simplifying the concepts for beginners. However, it reinforced my understanding of Django and allowed me to communicate my knowledge to a wider audience.
+        </p>
+    </div>
+</div> {% endcomment %}
+<div class="container mx-auto px-4 py-8">
+    <!-- Page Heading -->
+    <h2 class="text-3xl font-extrabold text-center mb-8">Project Title: My Django Blog</h2>
+
+    <!-- Blog Details Section -->
+    <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Blog Image -->
+        <div class="lg:w-1/2">
+            <img src="{% static 'portfolio/images/blog-home.png' %}" alt="Blog Image" class="w-full h-64 object-contain rounded-lg shadow-lg mb-6 lg:mb-0">
+        </div>
+
+        <!-- Blog Information -->
+        <div class="lg:w-1/2">
+            <h3 class="text-2xl font-bold mb-4">Blog Overview</h3>
+            <p class="mb-6">
+                This blog platform allows users to share their blog posts on various topics or categories. Users can upload, edit, and delete their posts, while also having the ability to like posts. If a user is not logged in, they can view the post title, short-description, author name of the blog post but cannot view details of that post. Additionally, there is a notification system where users are notified when they like a post, have a post deleted, or when new content is added.
+            </p>
+
+            <h4 class="text-xl font-semibold mb-2">Features</h4>
+            <ul class="list-disc pl-5 mb-6">
+                <li>User registration and authentication</li>
+                <li>Upload, edit, and delete blog posts</li>
+                <li>Like posts and view notifications</li>
+                <li>View blog details without login (limited interaction)</li>
+                <li>Responsive user profile</li>
+            </ul>
+
+            <h4 class="text-xl font-semibold mb-2">Technologies Used</h4>
+            <ul class="list-disc pl-5 mb-6">
+                <li>Django (Backend Framework)</li>
+                <li>SQLite (Database)</li>
+                <li>HTML/Tailwind CSS (Frontend)</li>
+                <li>JavaScript (Frontend Interactivity)</li>
+            </ul>
+
+            <!-- GitHub Link -->
+            <a href="https://github.com/iambiki-git/blog" target="_blank" class="text-blue-500 dark:text-blue-400 font-bold hover:underline transition duration-300">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Blog Image Gallery Section -->
+    <div class="mt-12">
+        <h3 class="text-2xl font-bold mb-4">Blog Post Photos</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-login.png' %}" alt="Blog Photo 1" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-register.png' %}" alt="Blog Photo 2" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-profile.png' %}" alt="Blog Photo 3" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-search.png' %}" alt="Blog Photo 4" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-footer.png' %}" alt="Blog Photo 5" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/blog-home.png' %}" alt="Blog Photo 6" class="w-full h-64 object-contain">
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="mt-8">
+        <h3 class="text-2xl font-semibold mb-4">Challenges & Learnings from This Blog</h3>
+        <p class="mb-8">
+            Writing this blog post posed several challenges, especially when simplifying the concepts for beginners. However, it reinforced my understanding of Django and allowed me to communicate my knowledge to a wider audience. Additionally, implementing features like post interactions, notifications, and user profiles deepened my understanding of web application functionality and Django's capabilities.
+        </p>
+    </div>
+</div>
+{% endblock %}
+{% block footer %}{% endblock %}

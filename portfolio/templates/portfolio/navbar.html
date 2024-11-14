@@ -7,10 +7,10 @@
     <ul class="hidden items-center gap-8 md:flex font-sans">
         {% comment %} <a href="#" class="hover:text-slate-300 transition-all duration-300 ease-in-out"><li>home</li></a> {% endcomment %}
         <a href="{% url 'about' %}" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>about</li></a>
-        <a href="#" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>projects</li></a>
-        <a href="#" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>services</li></a>
+        <a href="{% url 'project' %}" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>projects</li></a>
+        {% comment %} <a href="#" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>services</li></a> {% endcomment %}
         <a href="#" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>blog</li></a>
-        <a href="#" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>contact</li></a>
+        <a href="{% url 'contact' %}" class="hover:text-slate-400 transition-all duration-300 ease-in-out"><li>contact</li></a>
         <li><i class='bx bx-sun cursor-pointer text-xl' id="desktop-theme-toggle"></i></li>
 
     </ul>
@@ -36,10 +36,10 @@
     <ul class="flex flex-col items-start space-y-4">
         <li><a href="/" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Home</a></li>
         <li><a href="{% url 'about' %}" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">About</a></li>
-        <li><a href="#" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Projects</a></li>
-        <li><a href="#" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Services</a></li>
+        <li><a href="{% url 'project' %}" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Projects</a></li>
+        {% comment %} <li><a href="#" class="font-semibold text-lg hover:border-b-2 hover:border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Services</a></li> {% endcomment %}
         <li><a href="#" class="font-semibold text-lg hover:border-b-2 border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Blog</a></li>
-        <li><a href="#" class="font-semibold text-lg hover:border-b-2 border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Contact</a></li>
+        <li><a href="{% url 'contact' %}" class="font-semibold text-lg hover:border-b-2 border-green-500 pb-1 hover:text-slate-400 transition-all duration-300 ease-in-out">Contact</a></li>
         
     </ul>
 </div>

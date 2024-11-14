@@ -1,0 +1,74 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+
+{% block projects %}
+
+<div class="container mx-auto px-4 py-8">
+    <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
+    <p class="text-center max-w-3xl mx-auto mb-8">
+        Welcome to my project portfolio! Here, you’ll find a selection of my recent work, showcasing my skills in web development. Each project highlights unique features, design elements, and problem-solving techniques I’ve applied to create functional and visually appealing applications.
+    </p>
+    
+    <!-- Horizontal scrolling container -->
+    <div class="flex space-x-6 overflow-x-scroll scrollbar-hide py-4">
+        
+        <!-- Project Card 1 -->
+        <div class="relative flex-none w-80 shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
+            <img src="{% static 'portfolio/images/e-homeP.png' %}" alt="FashionMart" class="w-full h-48 object-contain rounded-t-lg">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-indigo-500 mb-2">FashionMart</h3>
+                <p class="mb-4">FashionMart is a stylish e-commerce platform for fashion lovers, featuring easy browsing, secure checkout, and personalized recommendations. Built to offer a seamless shopping experience across devices.</p>
+                <a href="{% url 'fashionmart-details' %}" class="text-blue-500 font-bold hover:underline">View Details</a>
+            </div>
+        </div>
+        
+        <!-- Project Card 2 -->
+        <div class="relative flex-none w-80 shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
+            <img src="{% static 'portfolio/images/blog-home.png' %}" alt="Blog-Post" class="w-full h-48 object-contain rounded-t-lg">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-indigo-500 mb-2">Blog Post</h3>
+                <p class="mb-4">A clean and user-friendly blogging platform where users can share, read, and like on posts. It features easy navigation and a responsive design for seamless access across devices.</p>
+                <a href="{% url 'blog-detail' %}" class="text-blue-500 font-bold hover:underline">View Details</a>
+            </div>
+        </div>
+        
+        <!-- Project Card 3 -->
+        <div class="relative flex-none w-80 shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
+            <img src="{% static 'portfolio/images/notes.png' %}" alt="ONS" class="w-full h-48 object-contain rounded-t-lg">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-indigo-500 mb-2">Online Notes Sharing</h3>
+                <p class="mb-4">A platform that allows users to upload, share, and download study notes. With features like easy navigation, real-time search, and secure file access, it provides a seamless experience for students and educators.</p>
+                <a href="{% url 'note-detail' %}" class="text-blue-500 font-bold hover:underline">View Details</a>
+            </div>
+        </div>
+        <div class="relative flex-none w-80 shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
+            <img src="{% static 'portfolio/images/project3.jpg' %}" alt="Not available" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-indigo-500 mb-2">Todo App</h3>
+                <p class="mb-4">A basic task management app with full CRUD functionality (Create, Read, Update, Delete). Users can easily add, view, update, and remove tasks, offering a simple way to stay organized.</p>
+                <a href="#" class="text-blue-500 font-bold hover:underline pointer-events-none opacity-50">View Details</a>
+            </div>
+        </div>
+        <div class="relative flex-none w-80 shadow-lg rounded-lg transform hover:scale-105 transition duration-300">
+            <img src="{% static 'portfolio/images/project3.jpg' %}" alt="Not available" class="w-full h-48 object-cover rounded-t-lg">
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-indigo-500 mb-2">Basic Calculator</h3>
+                <p class="mb-4">A simple calculator app that supports basic functionalities like addition, subtraction, multiplication, and division. It's designed for quick and easy calculations with a clean and user-friendly interface.</p>
+                <a href="#" class="text-blue-500 font-bold hover:underline pointer-events-none opacity-50">View Details</a>
+            </div>
+        </div>
+       
+        
+        <!-- Add more project cards as needed -->
+        
+    </div>
+</div> 
+
+
+
+{% endblock %}
+
+
+
+
+{% block footer %}{% endblock %}

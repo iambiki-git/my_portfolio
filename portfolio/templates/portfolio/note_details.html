@@ -1,0 +1,79 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block heroSection %}{% endblock %}
+{% block noteDetails %}
+<div class="container mx-auto px-4 py-8">
+    <!-- Page Heading -->
+    <h2 class="text-3xl font-extrabold text-center mb-8">Project Title: Online Notes Sharing Platform</h2>
+
+    <!-- Platform Details Section -->
+    <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Platform Image -->
+        <div class="lg:w-1/2">
+            <img src="{% static 'portfolio/images/notes.png' %}" alt="Notes Sharing Image" class="w-full h-64 object-contain rounded-lg shadow-lg mb-6 lg:mb-0">
+        </div>
+
+        <!-- Platform Information -->
+        <div class="lg:w-1/2">
+            <h3 class="text-2xl font-bold mb-4">Platform Overview</h3>
+            <p class="mb-6">
+                This platform is designed for users to share notes online, making it easy for students and professionals to access, upload, and download notes on various subjects. Users can upload their notes, view others' uploads, and download files.
+            </p>
+
+            <h4 class="text-xl font-semibold mb-2">Features</h4>
+            <ul class="list-disc pl-5 mb-6">
+                <li>User registration and secure login</li>
+                <li>Upload, edit, and delete notes</li>
+                <li>Download notes with permission control</li>
+                <li>Notification system for updates and interactions</li>
+                <li>Responsive design for cross-device accessibility</li>
+            </ul>
+
+            <h4 class="text-xl font-semibold mb-2">Technologies Used</h4>
+            <ul class="list-disc pl-5 mb-6">
+                <li>Django (Backend Framework)</li>
+                <li>SQLite/MySQL (Database)</li>
+                <li>HTML/CSS and Tailwind CSS (Frontend)</li>
+                <li>JavaScript for interactive elements</li>
+            </ul>
+
+            <!-- GitHub Link -->
+            <a href="https://github.com/iambiki-git/Online-Notes-Sharing" target="_blank" class="text-blue-500 dark:text-blue-400 font-bold hover:underline transition duration-300">View on GitHub</a>
+        </div>
+    </div>
+
+    <!-- Notes Image Gallery Section -->
+    <div class="mt-12">
+        <h3 class="text-2xl font-bold mb-4">Platform Screenshots</h3>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/notes-dashboard.png' %}" alt="Login Screen" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/notes-footer.png' %}" alt="Upload Notes" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/notes-list.png' %}" alt="Dashboard Screen" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/notes-profile.png' %}" alt="Search Notes" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/notes-downloads.png' %}" alt="Note Details" class="w-full h-64 object-contain">
+            </div>
+            <div class="bg-gray-100 dark:bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <img src="{% static 'portfolio/images/notes.png' %}" alt="Home Screen" class="w-full h-64 object-contain">
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="mt-8">
+        <h3 class="text-2xl font-semibold mb-4">Challenges & Learnings from This Project</h3>
+        <p class="mb-8">
+            Developing this online notes-sharing platform involved addressing challenges related to file upload management, permission control, and secure access. Through these challenges, I learned valuable skills in backend handling, user management, and UI optimization, making this project a comprehensive learning experience.
+        </p>
+    </div>
+</div>
+{% endblock %}
+{% block footer %}{% endblock %}
