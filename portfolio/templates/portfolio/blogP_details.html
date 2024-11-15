@@ -14,8 +14,8 @@
         <p class="text-sm sm:text-base text-gray-600 mb-6">
             Created on {{ blog.created_at|date:"F j, Y" }} by Biki
         </p>
-        <div class="leading-relaxed space-y-4 mb-8">
-            <p>{{ blog.content }}</p>
+        <div class="leading-relaxed space-y-4 mb-8 text-justify">
+            <p>{{ blog.content|linebreaks }}</p>
         </div>
 
        
