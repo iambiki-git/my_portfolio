@@ -1,0 +1,27 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block heroSection %}{% endblock %}
+{% block projects %}{% endblock %}
+{% block projectDetails %}{% endblock %}
+{% block blogDetails %}{% endblock %}
+{% block noteDetails %}{% endblock %}
+{% block blog %}
+<section class="bg-cover bg-center h-[calc(100vh-5rem)]  flex items-center justify-center relative">
+    <!-- Dark Overlay -->
+    {% comment %} <div class="absolute inset-0 bg-black opacity-50"></div> {% endcomment %}
+
+    <!-- Content Wrapper -->
+    <div class="z-10 text-center px-4">
+        <h1 class="text-4xl sm:text-5xl md:text-6xl font-bold mb-4">My Blog</h1>
+        <p class="text-lg sm:text-xl md:text-2xl font-light mb-8">Insights, tutorials, and stories from my coding journey</p>
+
+        <!-- CTA Buttons -->
+        <div class="flex justify-center gap-6 mt-6">
+            <a href="{% url 'explore-blog' %}" class="px-6 py-3 bg-pink-600 hover:bg-pink-700 font-semibold rounded transition duration-300 transform hover:scale-105">Explore Blogs</a>
+            <a href="#subscribe" class="px-6 py-3 bg-transparent border-2 border-white hover:bg-white hover:text-black font-semibold rounded hover:border-black transition duration-300 transform hover:scale-105">Subscribe</a>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+{% block footer %}{% endblock %}

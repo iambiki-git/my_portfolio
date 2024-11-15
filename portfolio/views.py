@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 # Create your views here.
 def index(request):
@@ -21,4 +21,17 @@ def note_details(request):
 
 def contact(request):
     return render(request, 'portfolio/contact.html')
+
+def blog(request):
+    return render(request, 'portfolio/blog.html')
+
+from .models import Blog
+def explore_blog(request):
+    blogs = Blog.objects.all()
+
+    return render(request, 'portfolio/explore_blog.html', {'blogs':blogs})
+
+def blog_details(request, pk):
+    blog = get_object_or_404(Blog, pk=pk)
+    return render(request, 'portfolio/blogP_details.html', {'blog':blog})
 

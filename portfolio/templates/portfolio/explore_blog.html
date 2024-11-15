@@ -1,0 +1,27 @@
+{% extends "portfolio/base.html" %}
+{% load static %}
+{% block herosection %}{% endblock %}
+
+{% block projects %}{% endblock %}
+{% block projectDetails %}{% endblock %}
+{% block blogDetails %}{% endblock %}
+{% block noteDetails %}{% endblock %}
+
+{% block explore_blog %}
+
+{% for blog in blogs %}
+<div class="container mx-auto px-4 py-12">
+    <article class="max-w-3xl mx-auto shadow-xl p-8 rounded-lg">
+        <h1 class="text-3xl font-bold mb-4">{{ blog.title }}</h1>
+        <p class="text-sm mb-6">Created Date: {{ blog.created_at }} </p>
+        <div class="leading-relaxed space-y-4">
+            <a href="{% url 'blog_details' pk=blog.id %}" class="font-bold hover:border-b border-slate-400">Read</a>
+        </div>
+    </article>
+</div>
+{% endfor %}
+
+
+{% endblock %}
+
+{% block footer %}{% endblock %}
