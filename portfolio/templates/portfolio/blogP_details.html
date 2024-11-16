@@ -20,13 +20,12 @@
 
        
 
-        <!-- Like Button -->
+        {% comment %} <!-- Like Button -->
 <div class="flex items-center gap-4 mb-8">
     <button id="like-btn" class="flex items-center gap-2 px-2 py-1 bg-blue-600 hover:bg-blue-700 text-white rounded transition-all duration-300 ease-in-out transform hover:scale-105">
         <span>❤️</span> Like
     </button>
-    {% comment %} <span id="like-count" class="text-xl font-semibold text-gray-700">{{ blog.likes }}</span> {% endcomment %}
-    <span id="like-count" class="text-xl font-semibold">101</span>
+    <span id="like-count" class="text-xl font-semibold text-gray-700">{{ blog.likes }}</span>
 </div>
 
 <!-- Comments Section -->
@@ -61,7 +60,7 @@
             <button type="submit" class="mt-4 px-6 py-3 bg-green-600 hover:bg-green-700 text-white rounded-full transition duration-300 ease-in-out transform hover:scale-105">Post Comment</button>
         </form>
     </div>
-</div>
+</div> {% endcomment %}
 
         
     </article>
