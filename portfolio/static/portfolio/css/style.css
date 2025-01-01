@@ -2,6 +2,7 @@ body {
     background-color: #ffffff; /* Light mode */
     color: #000000;
     overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
 }
   
 body.dark {
@@ -9,23 +10,32 @@ body.dark {
     color: whitesmoke;
 }
 
-/* Custom glowing effect */
-.pointer-trail {
-    width: 200px; /* Adjust to make the effect larger */
-    height: 200px; /* Adjust to make the effect larger */
-    position: absolute;
-    pointer-events: none;
-    background: radial-gradient(circle, rgba(0, 210, 255, 0.3) 0%, rgba(0, 150, 255, 0.15) 40%, rgba(255, 0, 255, 0) 80%);
-    transform: translate(-50%, -50%); /* Center the effect */
-    opacity: 0.6; /* Adjust opacity for subtle glow */
-    transition: transform 0.1s ease-out, opacity 0.2s ease-out;
-    filter: blur(20px); /* Blurring to soften edges for glow */
-}
 
-.scrollbar-hide {
-    -ms-overflow-style: none;  /* Internet Explorer 10+ */
-    scrollbar-width: none;  /* Firefox */
-}
-.scrollbar-hide::-webkit-scrollbar {
-    display: none;  /* Safari and Chrome */
-}
+/* Custom glowing effect */
+
+#snowfall-container {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+  
+  .snowflake {
+    position: absolute;
+    top: -10px;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: fall linear infinite;
+  }
+  
+  @keyframes fall {
+    to {
+      transform: translateY(100vh);
+    }
+  }

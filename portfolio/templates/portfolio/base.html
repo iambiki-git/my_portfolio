@@ -7,16 +7,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <title>{% block title %}Biki | Portfolio{% endblock %}</title>
     <link rel="stylesheet" href="{% static './portfolio/css/style.css' %}">
 </head>
 <body>
   <div id="trail" class="pointer-trail hidden"></div>
+    <div id="snowfall-container"></div>
 
     {% block navbar %} {% include "portfolio/navbar.html" %}{% endblock %}
-
-    {% block herosection %}{% endblock %}
+    
+    {% block content %}{% endblock %}
+    {% comment %} {% block herosection %}{% endblock %}
     {% block aboutme %}{% endblock %}
 
     {% block projects %}{% endblock %}
@@ -28,7 +31,7 @@
 
     {% block blog %}{% endblock %}
     {% block explore_blog %}{% endblock %}
-    {% block blogP_Details %}{% endblock %}
+    {% block blogP_Details %}{% endblock %} {% endcomment %}
 
 
 

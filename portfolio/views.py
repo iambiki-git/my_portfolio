@@ -13,7 +13,7 @@ def my_project(request):
 def fashion_mart_details(request):
     return render(request, 'portfolio/fashionmart_details.html')
 
-def blog_details(request):
+def blog_detail(request):
     return render(request, 'portfolio/blog_details.html')
 
 def note_details(request):

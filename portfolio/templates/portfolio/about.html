@@ -1,7 +1,7 @@
 {% extends "portfolio/base.html" %}
 {% load static %}
 {% block herosection %}{% endblock %}
-{% block aboutme %}
+{% block content %}
 
 <div class="min-h-screen py-20 md:py-32 px-6 font-sans">
     {% comment %} about me {% endcomment %}
@@ -21,7 +21,7 @@
              <!-- Image on Right -->
             
             <div class="flex justify-center items-center">
-                <img src="{% static './portfolio/images/mypic.jpg' %}" alt="Your Image" class="w-96 h-96 object-cover rounded shadow-lg transform transition duration-500 hover:scale-110" />
+                <img src="{% static './portfolio/images/mypic.jpg' %}" alt="Your Image" class="w-96 h-96 object-contain rounded shadow-lg transform transition duration-500 hover:scale-110" />
             </div>
             
             
@@ -131,86 +131,50 @@
     </div>
     {% comment %} end of schooling +2 bachelor {% endcomment %}
 
-    {% comment %} start of my skills  {% endcomment %}
     <div class="min-h-screen py-16 px-6 font-sans -mt-8">
         <div class="max-w-6xl mx-auto border-b border-slate-600 pb-24">
-            <!-- Skills Section -->
+            <!-- Projects & Achievements Section -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
     
-                <!-- Left Column: Title -->
+                <!-- Left Column: Highlighted Achievement -->
                 <div class="flex flex-col justify-center">
-                    <h2 class="text-4xl font-extrabold mb-6">Skills I Am Proficient In</h2>
+                    <h2 class="text-4xl font-extrabold mb-6">My Highlights</h2>
                     <p class="text-lg text-gray-600">
-                        Here are some of the key skills I bring to the table:
+                        A quick glance at some of my significant achievements and recent projects:
                     </p>
                 </div>
     
-                <!-- Right Column: Skills Bars -->
-                <div class="flex flex-col space-y-6">
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between">
-                            <span class="text-lg font-semibold">HTML & CSS</span>
-                            <span class="text-sm text-gray-500">90%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 90%"></div>
-                        </div>
+                <!-- Right Column: List of Projects/Achievements -->
+                <div class="grid grid-cols-1 gap-8">
+                    <!-- Project or Achievement Card -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
+                        <h3 class="text-xl font-bold mb-3">E-commerce Web Application</h3>
+                        <p class="text-gray-600 mb-3">
+                            Developed a full-stack e-commerce platform featuring real-time filtering, an intuitive admin panel, and seamless integration with payment gateways.
+                        </p>
+                        <a href="#"
+                            class="text-indigo-600 hover:text-indigo-800 text-sm font-bold underline transition">Read More</a>
                     </div>
     
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between">
-                            <span class="text-lg font-semibold">JavaScript (ES6+)</span>
-                            <span class="text-sm text-gray-500">85%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 85%"></div>
-                        </div>
+                    <!-- Achievement Card -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
+                        <h3 class="text-xl font-bold mb-3">Certified Web Developer</h3>
+                        <p class="text-gray-600 mb-3">
+                            Earned an industry-recognized certification in Web Development from XYZ Academy.
+                        </p>
                     </div>
     
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between">
-                            <span class="text-lg font-semibold">React JS</span>
-                            <span class="text-sm text-gray-500">80%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 80%"></div>
-                        </div>
-                    </div>
-    
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between">
-                            <span class="text-lg font-semibold">Django</span>
-                            <span class="text-sm text-gray-500">70%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 70%"></div>
-                        </div>
-                    </div>
-    
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between">
-                            <span class="text-lg font-semibold">Python</span>
-                            <span class="text-sm text-gray-500">90%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 90%"></div>
-                        </div>
-                    </div>
-    
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between">
-                            <span class="text-lg font-semibold">SQL</span>
-                            <span class="text-sm text-gray-500">75%</span>
-                        </div>
-                        <div class="w-full bg-gray-200 rounded-full h-2.5">
-                            <div class="bg-indigo-600 h-2.5 rounded-full" style="width: 75%"></div>
-                        </div>
+                    <!-- Another Project Card -->
+                    <div class="bg-gray-100 p-6 rounded-lg shadow-lg hover:shadow-xl transform transition duration-300 hover:scale-105">
+                        <h3 class="text-xl font-bold mb-3">Portfolio Website</h3>
+                        <p class="text-gray-600 mb-3">
+                            Built this portfolio using modern web technologies like TailwindCSS, HTML5, and Django for showcasing personal projects and achievements.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    {% comment %} end of myskill {% endcomment %}
     
     
 
