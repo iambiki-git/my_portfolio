@@ -13,27 +13,13 @@
     <link rel="stylesheet" href="{% static './portfolio/css/style.css' %}">
 </head>
 <body>
-  <div id="trail" class="pointer-trail hidden"></div>
-    <div id="snowfall-container"></div>
+  
+    <div id="trail" class="pointer-trail hidden"></div>
+    
 
     {% block navbar %} {% include "portfolio/navbar.html" %}{% endblock %}
-    
+    <div id="snowfall-container"></div>
     {% block content %}{% endblock %}
-    {% comment %} {% block herosection %}{% endblock %}
-    {% block aboutme %}{% endblock %}
-
-    {% block projects %}{% endblock %}
-    {% block projectDetails %}{% endblock %}
-    {% block blogDetails %}{% endblock %}
-    {% block noteDetails %}{% endblock %}
-
-    {% block contact %}{% endblock %}
-
-    {% block blog %}{% endblock %}
-    {% block explore_blog %}{% endblock %}
-    {% block blogP_Details %}{% endblock %} {% endcomment %}
-
-
 
     {% block footer %} {% include "portfolio/footer.html" %}{% endblock %}
 
